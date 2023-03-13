@@ -6,7 +6,6 @@
 }
 
 body {
-    height: 100vh;
     box-sizing: border-box;
     background-color: black;
     color: white;
@@ -17,7 +16,7 @@ body {
 }
 
 .apresentacao {
-    margin: 10% 15%;
+    padding: 8% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -54,6 +53,10 @@ body {
 }
 
 .apresentacao__links__botao {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+
     border: 2px solid #22D4FD;
     border-radius: 8px;
     color: #F6F6F6;
@@ -63,5 +66,25 @@ body {
     padding: 21.5px 0;
     text-align: center;
     text-decoration: none;
-    width: 378px;
+    width: 280px;
+}
+
+.apresentacao__links__botao:hover {
+    background-color: #272727;
+    padding: 23.5px 4px;
+    text-decoration: underline;
+    transition: 100ms;
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #22D4FD;
+    padding: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
 }
